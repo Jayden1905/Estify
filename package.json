@@ -1,0 +1,25 @@
+{
+  "name": "jn",
+  "version": "1.0.0",
+  "description": "Real Estate Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayden1905/JN.git"
+  },
+  "keywords": [],
+  "author": "Jayden(Kyaw Za Yan Naing)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jayden1905/JN/issues"
+  },
+  "homepage": "https://github.com/Jayden1905/JN#readme",
+  "devDependencies": {
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23"
+  }
+}
