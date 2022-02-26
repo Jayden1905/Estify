@@ -4,15 +4,43 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Real Estate</title>
+  <title>Estify</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="icon" href="../public-assets/favicon_io/favicon.ico" />
 </head>
 
-<body>
-  <h1 class="font-bold text-3xl text-green-900 text-center underline">
-    Hello Mom
-  </h1>
-  <script src="index.html"></script>
+<body class="w-full h-full bg-Primary">
+  <nav class="lg:flex top-4 fixed lg:flex-row p-2 w-full justify-around items-center">
+    <h1 class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer">
+      Estify
+    </h1>
+    <ul class="flex gap-8 justify-center items-center">
+      <li class="list-none text-TextPrimary text-2xs">
+        <a href="#" class="nav-link">Place to stay</a>
+      </li>
+      <li class="list-none text-TextPrimary text-2xs">
+        <a href="#" class="nav-link">Experiences</a>
+      </li>
+      <li class="list-none text-TextPrimary text-2xs">
+        <a href="#" class="nav-link">Online Experiences</a>
+      </li>
+    </ul>
+    <div class="flex justify-center items-center gap-1">
+      <a href="#" class="text-TextPrimary text-[12px] p-2 hover:bg-gray-600 rounded-full">
+        Become a Host
+      </a>
+      <i
+        class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-600 rounded-full text-TextPrimary mr-1 cursor-pointer"></i>
+      <div class="flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer">
+        <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
+        <i class="fa-solid fa-circle-user text-2xl text-TextSecondary"></i>
+      </div>
+    </div>
+  </nav>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  <script src="https://kit.fontawesome.com/3832cd8760.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
