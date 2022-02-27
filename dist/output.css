@@ -520,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 240px;
 }
 
+.w-\[230px\] {
+  width: 230px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -613,6 +617,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .text-center {
