@@ -1,55 +1,101 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="icon" href="../public-assets/favicon_io/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estify</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="/dist/output.css" />
-  <link rel="icon" href="../public-assets/favicon_io/favicon.ico" />
-</head>
-
-<body class="w-full h-full bg-Primary">
-  <nav class="lg:flex top-4 fixed lg:flex-row p-2 w-full justify-around items-center">
-    <h1 class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer">
-      Estify
-    </h1>
-    <ul class="flex gap-8 justify-center items-center">
-      <li class="list-none text-TextPrimary text-2xs">
-        <a href="#"
-          class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.5em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
-          Place to stay
+  <body class="w-full h-full bg-Primary">
+    <nav
+      class="lg:flex top-4 fixed lg:flex-row p-2 w-full justify-around items-center"
+    >
+      <h1
+        class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer"
+      >
+        Estify
+      </h1>
+      <ul class="flex gap-8 justify-center items-center">
+        <li class="list-none text-TextPrimary text-2xs">
+          <a
+            href="#"
+            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.5em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out"
+          >
+            Place to stay
+          </a>
+        </li>
+        <li class="list-none text-TextPrimary text-2xs">
+          <a
+            href="#"
+            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.5em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out"
+          >
+            Experiences
+          </a>
+        </li>
+        <li class="list-none text-TextPrimary text-2xs">
+          <a
+            href="#"
+            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.5em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out"
+          >
+            Online Experiences
+          </a>
+        </li>
+      </ul>
+      <div class="flex justify-center items-center gap-1">
+        <a
+          href="#"
+          class="text-TextPrimary text-[12px] p-2 hover:bg-gray-600 rounded-full"
+        >
+          Become a Host
         </a>
-      </li>
-      <li class="list-none text-TextPrimary text-2xs">
-        <a href="#"
-          class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.5em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
-          Experiences
-        </a>
-      </li>
-      <li class="list-none text-TextPrimary text-2xs">
-        <a href="#"
-          class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.5em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
-          Online Experiences
-        </a>
-      </li>
-    </ul>
-    <div class="flex justify-center items-center gap-1">
-      <a href="#" class="text-TextPrimary text-[12px] p-2 hover:bg-gray-600 rounded-full">
-        Become a Host
-      </a>
-      <i
-        class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-600 rounded-full text-TextPrimary mr-1 cursor-pointer"></i>
-      <div class="flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
-        <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
-        <i class="fa-solid fa-circle-user text-2xl text-TextSecondary"></i>
+        <i
+          class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-600 rounded-full text-TextPrimary mr-1 cursor-pointer"
+        ></i>
+        <div
+          class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg"
+        >
+          <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
+          <i class="fa-solid fa-circle-user text-2xl text-TextSecondary"></i>
+        </div>
+        <div
+          class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full w-[235px] hidden"
+        >
+          <a
+            href="#"
+            class="menu-link w-full hover:bg-gray-300 py-2 px-3 text-2xs cursor-pointer"
+            >Sign up</a
+          >
+          <a
+            href="#"
+            class="menu-link w-full hover:bg-gray-300 p-2 text-2xs cursor-pointer"
+            >Log in</a
+          >
+          <hr />
+          <a
+            href="#"
+            class="menu-link w-full hover:bg-gray-300 p-2 text-2xs cursor-pointer"
+            >Host your home</a
+          >
+          <a
+            href="#"
+            class="menu-link w-full hover:bg-gray-300 p-2 text-2xs cursor-pointer"
+            >Host an experience</a
+          >
+          <a
+            href="#"
+            class="menu-link w-full hover:bg-gray-300 p-2 text-2xs cursor-pointer"
+            >help</a
+          >
+        </div>
       </div>
-    </div>
-  </nav>
-  <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-  <script src="https://kit.fontawesome.com/3832cd8760.js" crossorigin="anonymous"></script>
-</body>
-
+    </nav>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  </body>
 </html>
