@@ -11,85 +11,87 @@
   <link rel="icon" href="../public-assets/favicon_io/favicon.ico" />
 </head>
 
-<body class="w-full h-full bg-Primary">
-  <nav class="sm:flex top-4 fixed sm:flex-row p-2 w-full justify-around items-center">
-    <h1 class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer">
-      Estify
-    </h1>
-    <ul class="flex gap-8 justify-center items-center">
-      <li class="list-none text-TextPrimary text-2xs">
-        <a href="#" data-tab-target="#placetostay"
-          class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
-          Place to stay
+<body>
+  <div class="w-full h-screen bg-Primary">
+    <nav class="sm:flex top-4 fixed sm:flex-row p-2 w-full justify-around items-center">
+      <h1 class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer">
+        Estify
+      </h1>
+      <ul class="flex gap-8 justify-center items-center flex-shrink">
+        <li class="list-none text-TextPrimary text-2xs">
+          <a href="#" data-tab-target="#placetostay"
+            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
+            Place to stay
+          </a>
+        </li>
+        <li class="list-none text-TextPrimary text-2xs">
+          <a href="#" data-tab-target="#experiences"
+            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
+            Experiences
+          </a>
+        </li>
+        <li class="list-none text-TextPrimary text-2xs">
+          <a href="#" data-tab-target="#onlineexperiences"
+            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
+            Online Experiences
+          </a>
+        </li>
+        <li class="tab-content rounded-[80px] shadow-lg bg-TextPrimary absolute top-full mt-2">
+          <div id="placetostay" class="flex items-center h-max flex-shrink">
+            <a href="#" onclick="fc()" onblur="bl()"
+              class="location text-TextSecondary rounded-[80px] pl-8 py-3 text-xs w-[15em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
+              Location <br />
+              <input
+                class="appearance-none border-0 bg-transparent rounded w-full text-TextSecondary leading-tight focus:outline-none focus:shadow-outline"
+                id="input-location" type="text" placeholder="Where are you going?" />
+            </a>
+            <a href="#"
+              class="text-TextSecondary rounded-[80px] pl-8 py-3 text-xs w-[10em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
+              Check in <br />
+              <span class="font-light opacity-50">Add dates</span>
+            </a>
+            <a href="#"
+              class="text-TextSecondary rounded-[80px] pl-8 py-3 text-xs w-[10em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
+              Check out <br />
+              <span class="font-light opacity-50">Add dates</span>
+            </a>
+            <a href="#"
+              class="text-TextSecondary rounded-[80px] pl-8 py-2 text-xs font-bold hover:bg-gray-300 flex justify-center items-center gap-12 flex-shrink">
+              <p>
+                Guests <br />
+                <span class="font-light opacity-50">Add guests</span>
+              </p>
+              <button type="submit" onclick="fc()" onblur="bl()"
+                class="bg-red-500 hover:bg-red-600 rounded-full p-3 mr-2 flex gap-2 justify-center items-center search flex-shrink">
+                <i class="fa-solid fa-magnifying-glass text-xs text-TextPrimary cursor-pointer"></i>
+                <span class="search-text text-TextPrimary text-2xs hidden">Search</span>
+              </button>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div class="flex justify-center items-center gap-1">
+        <a href="#" class="text-TextPrimary text-[12px] p-2 hover:bg-gray-600 rounded-full">
+          Become a Host
         </a>
-      </li>
-      <li class="list-none text-TextPrimary text-2xs">
-        <a href="#" data-tab-target="#experiences"
-          class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
-          Experiences
-        </a>
-      </li>
-      <li class="list-none text-TextPrimary text-2xs">
-        <a href="#" data-tab-target="#onlineexperiences"
-          class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
-          Online Experiences
-        </a>
-      </li>
-      <li class="tab-content rounded-[80px] shadow-lg bg-TextPrimary absolute top-full mt-2">
-        <div id="placetostay" class="flex items-center h-max p-0">
-          <a href="#"
-            class="text-TextSecondary rounded-[80px] pl-8 py-4 w-[15em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%]">
-            Location <br />
-            <input
-              class="appearance-none border-0 bg-transparent rounded w-full text-TextSecondary leading-tight focus:outline-none focus:shadow-outline"
-              id="where" type="text" placeholder="Where are you going?">
-          </a>
-          <a href="#"
-            class="text-TextSecondary rounded-[80px] pl-8 py-4 w-[10em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%]">
-            Check in <br />
-            <span class="font-light opacity-50">Add dates</span>
-          </a>
-          <a href="#"
-            class="text-TextSecondary rounded-[80px] pl-8 py-4 w-[10em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%]">
-            Check out <br />
-            <span class="font-light opacity-50">Add dates</span>
-          </a>
-          <a href="#"
-            class="text-TextSecondary rounded-[80px] pl-8 py-3 font-bold hover:bg-gray-300 flex justify-center gap-20">
-            <p>Guests <br />
-              <span class="font-light opacity-50">Add guests</span>
-            </p>
-            <p
-              class=" bg-red-500 hover:bg-red-600 rounded-full p-[1rem] mr-2 flex gap-2 justify-center items-center search">
-              <i class="fa-solid fa-magnifying-glass text-xl text-TextPrimary cursor-pointer"></i>
-              <span class="search-text text-TextPrimary text-2xs hidden">Search</span>
-            </p>
-          </a>
+        <i
+          class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-600 rounded-full text-TextPrimary mr-1 cursor-pointer"></i>
+        <div
+          class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
+          <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
+          <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
         </div>
-      </li>
-    </ul>
-    <div class="flex justify-center items-center gap-1">
-      <a href="#" class="text-TextPrimary text-[12px] p-2 hover:bg-gray-600 rounded-full">
-        Become a Host
-      </a>
-      <i
-        class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-600 rounded-full text-TextPrimary mr-1 cursor-pointer"></i>
-      <div
-        class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
-        <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
-        <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
+        <div class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full w-[240px] hidden">
+          <a href="#" class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer">Sign up</a>
+          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Log in</a>
+          <hr />
+          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host your home</a>
+          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host an experience</a>
+          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">help</a>
+        </div>
       </div>
-      <div class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full w-[240px] hidden">
-        <a href="#" class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer">Sign up</a>
-        <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Log in</a>
-        <hr />
-        <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host your home</a>
-        <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host an experience</a>
-        <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">help</a>
-      </div>
-    </div>
-  </nav>
-
+    </nav>
+  </div>
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
