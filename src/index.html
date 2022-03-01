@@ -13,11 +13,11 @@
 
 <body>
   <div class="w-full h-screen bg-Primary">
-    <nav class="flex fixed p-2 w-full justify-around items-center">
+    <nav class="flex fixed p-2 w-full justify-around items-center lg:gap-0 gap-[40%] top-4">
       <h1 class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer">
         Estify
       </h1>
-      <ul class="flex gap-8 justify-center items-center flex-shrink">
+      <ul class="flex gap-8 justify-center items-center flex-shrink lg:relative lg:ml-[135px] ml-0 absolute top-[140%]">
         <li class="list-none text-TextPrimary text-2xs">
           <a href="#" data-tab-target="#placetostay"
             class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
@@ -31,45 +31,10 @@
           </a>
         </li>
         <li class="list-none text-TextPrimary text-2xs">
-          <a href="#" data-tab-target="#onlineexperiences"
+          <a href="#"
             class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
             Online Experiences
           </a>
-        </li>
-        <li class="tab-content rounded-[80px] shadow-lg bg-TextPrimary absolute top-full mt-2">
-          <form id="placetostay" class="flex items-center h-max flex-shrink">
-            <div onclick="fc()" onblur="bl()"
-              class="location cursor-pointer text-TextSecondary rounded-[80px] pl-8 py-3 text-xs w-[15em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
-              Location <br />
-              <input
-                class="appearance-none border-0 bg-transparent rounded w-full text-TextSecondary leading-tight focus:outline-none focus:shadow-outline"
-                id="input-location" type="text" placeholder="Where are you going?" />
-            </div>
-            <button type="submit"
-              class="text-TextSecondary rounded-[80px] pl-8 py-3 text-xs w-[10em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
-              Check in <br />
-              <span class="font-light opacity-50">Add dates</span>
-            </button>
-            <button type="submit"
-              class="text-TextSecondary rounded-[80px] pl-8 py-3 text-xs w-[10em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
-              Check out <br />
-              <span class="font-light opacity-50">Add dates</span>
-            </button>
-            <div
-              class="guest text-TextSecondary rounded-[80px] pl-8 py-2 text-xs font-bold hover:bg-gray-300 flex justify-center items-center gap-12 flex-shrink cursor-pointer">
-              <p>
-                Guests <br />
-                <span class="font-light opacity-50">Add guests</span>
-              </p>
-              <div onclick="fc()" onblur="bl()"
-                class="bg-red-500 hover:bg-red-600 rounded-full p-3 mr-2 flex gap-2 justify-center items-center search flex-shrink">
-                <i class="fa-solid fa-magnifying-glass text-xs text-TextPrimary cursor-pointer"></i>
-                <span class="search-text text-TextPrimary text-2xs" hidden id="text-search">
-                  Search
-                </span>
-              </div>
-            </div>
-          </form>
         </li>
       </ul>
       <div class="flex justify-center items-center gap-1">
@@ -92,10 +57,48 @@
           <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">help</a>
         </div>
       </div>
+      <div class="tab-content rounded-[80px] shadow-lg bg-TextPrimary absolute top-full lg:mt-2 mt-[70px]">
+        <form id="placetostay" class="flex items-center h-max flex-shrink">
+          <div onclick="fc()" onblur="bl()"
+            class="location cursor-pointer text-TextSecondary rounded-[80px] pl-8 py-3 text-base w-[18em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[30px] flex flex-col flex-shrink">
+            Location <br />
+            <input
+              class="appearance-none border-0 bg-transparent rounded w-full text-TextSecondary leading-tight focus:outline-none focus:shadow-outline"
+              id="input-location" type="text" placeholder="Where are you going?" />
+          </div>
+          <button type="submit"
+            class="text-TextSecondary rounded-[80px] pl-8 py-3 text-base w-[14em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
+            Check in <br />
+            <span class="font-light opacity-50">Add dates</span>
+          </button>
+          <button type="submit"
+            class="text-TextSecondary rounded-[80px] pl-8 py-3 text-xs w-[14em] font-bold hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] after:bottom-[25px] flex flex-col flex-shrink">
+            Check out <br />
+            <span class="font-light opacity-50">Add dates</span>
+          </button>
+          <div
+            class="guest text-TextSecondary rounded-[80px] pl-8 py-2 text-xs font-bold hover:bg-gray-300 flex justify-center items-center gap-20 flex-shrink cursor-pointer">
+            <p>
+              Guests <br />
+              <span class="font-light opacity-50">Add guests</span>
+            </p>
+            <div onclick="fc()" onblur="bl()"
+              class="bg-red-500 hover:bg-red-600 rounded-full p-3 mr-2 flex gap-2 justify-center items-center search flex-shrink">
+              <i class="fa-solid fa-magnifying-glass text-xs text-TextPrimary cursor-pointer"></i>
+              <span class="search-text text-TextPrimary text-2xs hidden" id="text-search">
+                Search
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
     </nav>
   </div>
-  <script src="script.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

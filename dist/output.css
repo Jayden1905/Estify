@@ -468,6 +468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
 }
@@ -480,20 +484,48 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.top-\[140\%\] {
+  top: 140%;
+}
+
 .top-full {
   top: 100%;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
 }
 
 .mr-2 {
   margin-right: 0.5rem;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .flex {
@@ -514,20 +546,60 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: max-content;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-\[15em\] {
-  width: 15em;
-}
-
-.w-\[10em\] {
-  width: 10em;
-}
-
 .w-\[240px\] {
   width: 240px;
+}
+
+.w-\[18em\] {
+  width: 18em;
+}
+
+.w-\[12em\] {
+  width: 12em;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[700px\] {
+  width: 700px;
+}
+
+.w-\[800px\] {
+  width: 800px;
+}
+
+.w-\[754px\] {
+  width: 754px;
+}
+
+.w-\[20em\] {
+  width: 20em;
+}
+
+.w-\[16em\] {
+  width: 16em;
+}
+
+.w-\[14em\] {
+  width: 14em;
 }
 
 .flex-shrink {
@@ -570,16 +642,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
+.gap-\[40\%\] {
+  gap: 40%;
+}
+
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-12 {
-  gap: 3rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-1 {
@@ -590,12 +658,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
-.rounded-\[80px\] {
-  border-radius: 80px;
+.gap-14 {
+  gap: 3.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-\[50\%\] {
+  gap: 50%;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-\[80px\] {
+  gap: 80px;
 }
 
 .rounded-full {
@@ -608,6 +696,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-\[80px\] {
+  border-radius: 80px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border-0 {
@@ -641,14 +737,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.75rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .py-1 {
@@ -661,9 +751,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pl-8 {
@@ -683,13 +798,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -702,6 +848,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .tracking-widest {
@@ -733,6 +883,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.tab-content-active {
+  background-color: white;
+  box-shadow: 5px 0 100px black;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -756,6 +911,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .after\:bottom-\[25px\]::after {
   content: var(--tw-content);
   bottom: 25px;
+}
+
+.after\:bottom-\[30px\]::after {
+  content: var(--tw-content);
+  bottom: 30px;
+}
+
+.after\:bottom-\[35px\]::after {
+  content: var(--tw-content);
+  bottom: 35px;
+}
+
+.after\:bottom-\[33px\]::after {
+  content: var(--tw-content);
+  bottom: 33px;
+}
+
+.after\:bottom-\[34px\]::after {
+  content: var(--tw-content);
+  bottom: 34px;
+}
+
+.after\:bottom-\[32px\]::after {
+  content: var(--tw-content);
+  bottom: 32px;
 }
 
 .after\:h-\[2px\]::after {
@@ -820,6 +1000,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:bg-gray-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -830,11 +1015,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .after\:hover\:w-\[10\%\]:hover::after {
   content: var(--tw-content);
   width: 10%;
@@ -843,4 +1023,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:ml-\[135px\] {
+    margin-left: 135px;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
+  }
 }

@@ -1,45 +1,57 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const menuItems = document.querySelector(".menu-items");
 const menuLinks = document.querySelectorAll(".menu-link");
-const tabs = document.querySelectorAll("[data-tab-target]");
 const search = document.querySelector(".search");
 const searchText = document.querySelector(".search-text");
-const textSearch = document.getElementById("text-search");
 const Location = document.querySelector(".location");
 const inputLocation = document.getElementById("input-location");
 const guest = document.querySelector(".guest");
 
-window.addEventListener("click", function (e) {
-  if (
-    search.contains(e.target) ||
-    Location.contains(e.target) ||
-    guest.contains(e.target)
-  ) {
-    // Clicked in box
-    // searchText.classList.remove("hidden");
-    searchText.removeAttribute("hidden");
-  } else {
-    // Clicked outside the box
-    // searchText.classList.add("hidden");
-    searchText.setAttribute("hidden", true);
-  }
-  if (menuToggle.contains(e.target)) {
-    menuItems.classList.toggle("scale-0");
-  } else {
-    menuItems.classList.add("scale-0");
-  }
+$(document).ready(function () {
+  $("#text-search").attr("hidden", true);
+  $(window).click(function (e) {
+    if (
+      search.contains(e.target) ||
+      Location.contains(e.target) ||
+      guest.contains(e.target)
+    ) {
+      // Clicked in box
+      $("#text-search").show("fast");
+    } else {
+      // Clicked outside the box
+      $("#text-search").hide("fast");
+    }
+    if (menuToggle.contains(e.target)) {
+      menuItems.classList.toggle("scale-0");
+    } else {
+      menuItems.classList.add("scale-0");
+    }
+    e.preventDefault();
+
+    $(window).load(function () {
+      $("#text-search").setAttribute("hidden", true);
+    });
+  });
+
+  menuLinks.forEach((n) =>
+    n.addEventListener("click", () => {
+      menuItems.classList.add("hidden");
+    })
+  );
+
+  $(".search").click(function () {
+    inputLocation.focus();
+  });
+
+  $(".search").blur(function () {
+    inputLocation.blur();
+  });
+
+  $(".location").click(function () {
+    inputLocation.focus();
+  });
+
+  $(".search").blur(function () {
+    inputLocation.blur();
+  });
 });
-
-menuLinks.forEach((n) =>
-  n.addEventListener("click", () => {
-    menuItems.classList.add("hidden");
-  })
-);
-
-function fc() {
-  inputLocation.focus();
-}
-
-function bl() {
-  inputLocation.blur();
-}
