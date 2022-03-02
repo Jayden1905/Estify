@@ -19,7 +19,6 @@
   "homepage": "https://github.com/Jayden1905/JN#readme",
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^2.0.1",
-    "jquery": "^3.6.0",
     "postcss": "^8.4.7",
     "prettier": "^2.5.1",
     "tailwindcss": "^3.0.23"
