@@ -54,4 +54,12 @@ $(document).ready(function () {
   $(".search").blur(function () {
     inputLocation.blur();
   });
+
+  $(window).resize(function () {
+    if ($(this).width() < 1024) {
+      $(".divIWantedToHide").hide();
+    } else {
+      $(".divIWantedToHide").show();
+    }
+  });
 });
