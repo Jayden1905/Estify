@@ -13,7 +13,7 @@
 
 <body>
   <div class="w-screen h-screen bg-black flex justify-center">
-    <nav class="flex fixed p-2 w-full justify-around items-center lg:gap-0 gap-[40%] top-4 z-10">
+    <nav class="flex fixed p-4 w-full justify-around items-center lg:gap-0 gap-[40%] z-10">
       <h1 class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer">
         Estify
       </h1>
@@ -89,6 +89,15 @@
           <i class="fa-solid fa-magnifying-glass text-xl text-TextPrimary"></i>
           <Search class="hidden search-text text-TextPrimary text-xs" id="text-search">Search</Search>
         </button>
+      </div>
+      <div id="listing"
+        class="absolute top-full bg-TextPrimary mt-4 rounded-[30px] p-6 w-[500px] h-[150px] flex flex-col justify-center gap-4 scale-0">
+        <p class="uppercase">Go Anywhere, anytime</p>
+        <a href="../src/listing.html" id="listing-page"
+          class="shadow-2xl border-[1px] hover:shadow-2xl border-gray-200 rounded-full p-4 pl-6 flex justify-start items-center z-50">
+          I'm flexible
+          <i class="fa-solid fa-angle-right text-3xl ml-auto font-extralight"></i>
+        </a>
       </div>
     </form>
   </div>

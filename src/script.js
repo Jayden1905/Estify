@@ -6,6 +6,7 @@ const searchText = document.querySelector(".search-text");
 const yourLocation = document.querySelector(".location");
 const inputLocation = document.getElementById("input-location");
 const guest = document.querySelector(".guest");
+const listing = document.getElementById("listing");
 
 $(document).ready(function () {
   function jj() {
@@ -17,6 +18,7 @@ $(document).ready(function () {
       ) {
         // Clicked in box
         $("#text-search").show("fast");
+        e.preventDefault();
 
         $(window).resize(function () {
           if ($(window).width() < 900) {
@@ -36,7 +38,12 @@ $(document).ready(function () {
       } else {
         menuItems.classList.add("scale-0");
       }
-      e.preventDefault();
+      if (search.contains(e.target) || yourLocation.contains(e.target)) {
+        listing.classList.remove("scale-0");
+      } else {
+        listing.classList.add("scale-0");
+      }
+      // e.preventDefault();
     });
   }
   if ($(window).width() < 900) {
