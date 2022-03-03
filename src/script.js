@@ -1,19 +1,70 @@
 const menuToggle = document.querySelector(".menu-toggle");
-// const menuItems = document.querySelector(".menu-items");
-// const btnSearch = document.getElementById("btn-search");
-// const searchText = document.querySelector(".search-text");
-//
-// menuToggle.addEventListener("click", () => {
-//   menuItems.classList.toggle("scale-0");
-// });
-//
-// btnSearch.addEventListener("click", () => {
-//   searchText.classList.toggle("hidden");
-// });
+const menuItems = document.querySelector(".menu-items");
+const menuLinks = document.querySelectorAll(".menu-link");
+const search = document.querySelector(".search");
+const searchText = document.querySelector(".search-text");
+const yourLocation = document.querySelector(".location");
+const inputLocation = document.getElementById("input-location");
+const guest = document.querySelector(".guest");
+
 $(document).ready(function () {
-  if (menuToggle.contains(e.target)) {
-    $("#menu-items").hasClass.toggle("scale-0");
-  } else {
-    $("#menu-items").hadClass.add("scale-0");
+  function jj() {
+    $(window).click(function (e) {
+      if (
+        search.contains(e.target) ||
+        yourLocation.contains(e.target) ||
+        guest.contains(e.target)
+      ) {
+        // Clicked in box
+        $("#text-search").show("fast");
+
+        $(window).resize(function () {
+          if ($(window).width() < 900) {
+            $("search#text-search").removeAttr("id");
+            $("search").hide("fast", "linear");
+          } else {
+            $(".search-text").attr("id", "text-search");
+            $("search").show("fast", "linear");
+          }
+        });
+      } else {
+        // Clicked outside the box
+        $("#text-search").hide("fast");
+      }
+      if (menuToggle.contains(e.target)) {
+        menuItems.classList.toggle("scale-0");
+      } else {
+        menuItems.classList.add("scale-0");
+      }
+      e.preventDefault();
+    });
   }
+  if ($(window).width() < 900) {
+    $("Search#text-search").removeAttr("id");
+    jj();
+  } else {
+    jj();
+  }
+
+  menuLinks.forEach((n) =>
+    n.addEventListener("click", () => {
+      menuItems.classList.add("scale-0");
+    })
+  );
+
+  $(".search").click(function () {
+    inputLocation.focus();
+  });
+
+  $(".search").blur(function () {
+    inputLocation.blur();
+  });
+
+  $(".location").click(function () {
+    inputLocation.focus();
+  });
+
+  $(".search").blur(function () {
+    inputLocation.blur();
+  });
 });
