@@ -44,12 +44,12 @@
         <i
           class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-600 rounded-full text-TextPrimary mr-1 cursor-pointer"></i>
         <div id="menu-toggle"
-          class="flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
+          class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
           <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
           <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
         </div>
         <div id="menu-items"
-          class="bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full mt-4 w-[240px] scale-0 shadow-lg">
+          class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full mt-4 w-[240px] scale-0 shadow-lg">
           <a href="#" class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer">Sign up</a>
           <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Log in</a>
           <hr />
@@ -59,36 +59,36 @@
         </div>
       </div>
     </nav>
-    <form action=""
+    <form action="" id="place"
       class="w-max h-[68px] rounded-[80px] bg-TextPrimary relative lg:top-20 top-[140px] flex gap-[1px] flex-shrink form-tab">
       <div
         class="cursor-pointer bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-3 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
-        <label for="" class="cursor-pointer text-TextSecondary">Location</label>
-        <input type="text" placeholder="Where are you going?"
+        <label for="" class="cursor-pointer location text-TextSecondary">Location</label>
+        <input type="text" placeholder="Where are you going?" id="input-location"
           class="appearance-none border-white bg-transparent rounded text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
       </div>
       <div
-        class="cursor-pointer bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-10 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
+        class="cursor-pointer bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-8 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
         <p class="text-TextSecondary">Check in</p>
         <span class="text-gray-400">Add dates</span>
       </div>
       <div
-        class="cursor-pointer bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-10 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
+        class="cursor-pointer bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-8 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
         <p class="text-TextSecondary">Check out</p>
         <span class="text-gray-400">Add dates</span>
       </div>
       <div
-        class="cursor-pointer bg-TextPrimary text-xs pl-10 rounded-[80px] flex flex-shrink justify-center items-center hover:bg-gray-300 relative lg:gap-16 gap-10">
+        class="guest cursor-pointer bg-TextPrimary text-xs pl-10 rounded-[80px] flex flex-shrink justify-center items-center hover:bg-gray-300 relative lg:gap-16 gap-10">
         <div class="flex flex-col flex-shrink gap-1">
           <p class="text-TextSecondary">Guests</p>
           <span class="text-gray-400">Add guests</span>
         </div>
-        <div
-          class="mr-4 flex justify-center flex-shrink gap-2 items-center bg-red-500 hover:bg-red-600 lg:p-4 p-[14px] rounded-full"
+        <button type="submit"
+          class="search mr-4 flex justify-center flex-shrink gap-2 items-center bg-red-500 hover:bg-red-600 lg:p-4 p-3 rounded-full"
           id="btn-search">
           <i class="fa-solid fa-magnifying-glass text-xl text-TextPrimary"></i>
-          <span class="hidden search-text text-TextPrimary text-xs">Search</span>
-        </div>
+          <Search class="hidden search-text text-TextPrimary text-xs" id="text-search">Search</Search>
+        </button>
       </div>
     </form>
   </div>
