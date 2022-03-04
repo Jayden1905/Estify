@@ -23,15 +23,17 @@ $(document).ready(function () {
 });
 
 window.onscroll = () => {
-  if (window.scrollY > 75) {
+  if (window.scrollY > 71) {
     navBarList.classList.add("fixed");
     navBarList.classList.add("shadow-xl");
-    ulList.classList.remove("h-12");
-    ulList.classList.add("h-20");
+    $("#list").removeClass("after:bottom-3");
+    $("#list").addClass("after:bottom-0");
+    // $("#list").fadeOut();
   } else {
     navBarList.classList.remove("fixed");
     navBarList.classList.remove("shadow-xl");
-    ulList.classList.remove("fixed");
-    ulList.classList.add("h-12");
+    $("#list").removeClass("after:bottom-0");
+    $("#list").addClass("after:bottom-3");
+    // $("#list").fadeIn();
   }
 };
