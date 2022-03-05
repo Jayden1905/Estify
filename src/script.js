@@ -21,7 +21,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         $(window).resize(function () {
-          if ($(window).width() < 900) {
+          if ($(window).width() < 1024) {
             $("search#text-search").removeAttr("id");
             $("search").hide("fast", "linear");
           } else {
@@ -46,7 +46,7 @@ $(document).ready(function () {
       // e.preventDefault();
     });
   }
-  if ($(window).width() < 900) {
+  if ($(window).width() < 1024) {
     $("Search#text-search").removeAttr("id");
     jj();
   } else {
