@@ -11,97 +11,114 @@
   <link rel="icon" href="../public-assets/favicon_io/favicon.ico" />
 </head>
 
-<body class="overflow-x-hidden bg-TextPrimary">
-  <div class="listing-navigation w-screen h-20 bg-TextPrimary flex flex-col">
-    <nav
-      class="navigation mb-3 flex p-4 w-full justify-between items-center bg-TextPrimary lg:gap-0 gap-[40%] z-10 border-b-[1px] border-gray-200">
-      <h1 class="ml-16 font-bold text-3xl text-TextSecondary text-center font-serif tracking-widest cursor-pointer">
-        Estify
-      </h1>
-      <div class="mr-16 flex justify-center items-center gap-1 relative">
-        <a href="#" class="text-TextSecondary text-[12px] p-2 hover:bg-gray-200 rounded-full">
-          Become a Host
-        </a>
-        <i
-          class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-200 rounded-full text-TextSecondary mr-1 cursor-pointer"></i>
-        <div id="menu-toggle"
-          class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
-          <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
-          <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
-        </div>
-        <div id="menu-items"
-          class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full mt-4 w-[240px] scale-0 shadow-lg">
-          <a href="#" class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer">Sign up</a>
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Log in</a>
-          <hr />
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host your home</a>
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host an experience</a>
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">help</a>
-        </div>
-      </div>
-    </nav>
-    <nav class="listing-nav-bar h-24 flex w-full px-20 items-center bg-TextPrimary">
-      <ul class="ul-list flex gap-6 text-TextSecondary h-20 items-center transition-all duration-150 ease-linear">
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-2 border-black transition-all duration-200 ease-linear">
-          <a href="#" class="flex items-center gap-2">
-            <i class="fa-solid fa-house"></i>
-            Tiny homes
+<body class="bg-TextPrimary">
+  <div class="listing-navigation h-20 bg-TextPrimary flex flex-col">
+    <div class="border-b-2 border-gray-200 z-50">
+      <nav class="navigation container mx-auto flex py-4 justify-between items-center bg-TextPrimary z-50">
+        <h1 class="font-bold text-3xl text-TextSecondary text-center font-serif tracking-widest cursor-pointer">
+          Estify
+        </h1>
+        <div class="flex justify-center items-center gap-1 relative">
+          <a href="#" class="text-TextSecondary text-[12px] p-2 hover:bg-gray-200 rounded-full">
+            Become a Host
           </a>
-        </li>
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-          <a href="#">Amazing pools</a>
-        </li>
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-          <a href="#">Beachfront</a>
-        </li>
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-          <a href="#">Offbeat</a>
-        </li>
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-          <a href="#">Cabins</a>
-        </li>
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-          <a href="#">Ryokans</a>
-        </li>
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-          <a href="#">Islands</a>
-        </li>
-        <li
-          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-          <button type="submit" class="flex items-center gap-2">
-            More <i class="fa-solid fa-angle-down text-xs"></i>
+          <i
+            class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-200 rounded-full text-TextSecondary mr-1 cursor-pointer"></i>
+          <div id="menu-toggle"
+            class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
+            <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
+            <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
+          </div>
+          <div id="menu-items"
+            class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full mt-4 w-[240px] scale-0 shadow-lg">
+            <a href="#" class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer">Sign up</a>
+            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Log in</a>
+            <hr />
+            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host your home</a>
+            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host an
+              experience</a>
+            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">help</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <nav class="listing-nav-bar w-full h-24 flex items-center bg-TextPrimary z-10">
+      <div class="flex items-center container mx-auto">
+        <ul class="ul-list flex gap-6 text-TextSecondary h-20 items-center transition-all duration-150 ease-linear">
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-2 border-black transition-all duration-200 ease-linear">
+            <a href="#" class="flex items-center gap-2">
+              <i class="fa-solid fa-house"></i>
+              Tiny homes
+            </a>
+          </li>
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+            <a href="#">Amazing pools</a>
+          </li>
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+            <a href="#">Beachfront</a>
+          </li>
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+            <a href="#">Offbeat</a>
+          </li>
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+            <a href="#">Cabins</a>
+          </li>
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+            <a href="#">Ryokans</a>
+          </li>
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+            <a href="#">Islands</a>
+          </li>
+          <li
+            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+            <button type="submit" class="flex items-center gap-2">
+              More <i class="fa-solid fa-angle-down text-xs"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="flex ml-auto gap-2">
+          <button type="submit"
+            class="flex border-[2px] border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
+            <p>Anytime</p>
+            <i class="fa-solid fa-angle-down"></i>
           </button>
-        </li>
-      </ul>
-      <div class="flex ml-auto gap-2">
-        <button type="submit"
-          class="flex border-[2px] border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
-          <p>Anytime</p>
-          <i class="fa-solid fa-angle-down"></i>
-        </button>
-        <button type="submit"
-          class="flex border-[2px] border-gray-300 items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
-          <p>Gusts</p>
-          <i class="fa-solid fa-angle-down"></i>
-        </button>
-        <button type="submit"
-          class="flex border-[2px] border-gray-300 items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
-          <i class="fa-solid fa-sliders"></i>
-          <p>Filter</p>
-        </button>
+          <button type="submit"
+            class="flex border-[2px] border-gray-300 items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
+            <p>Gusts</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <button type="submit"
+            class="flex border-[2px] border-gray-300 items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
+            <i class="fa-solid fa-sliders"></i>
+            <p>Filter</p>
+          </button>
+        </div>
       </div>
     </nav>
   </div>
   <div
-    class="product-listing w-full h-full mt-20 overflow-x-hidden bg-TextPrimary grid justify-center lg:grid-cols-auto-fit grid-cols-auto-fit-2 gap-4 py-5">
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
+    class="product-listing container mx-auto mt-20 overflow-x-hidden grid justify-center sm:grid-cols-auto-fit grid-cols-auto-fit-3 gap-4 py-5">
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[350px] bg-blue-900 rounded-2xl relative">
+        <ul>
+          <li class="slide">
+            <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+              class="absolute object-cover w-full h-full rounded-2xl" />
+          </li>
+        </ul>
+      </div>
+      <div class="listing-description flex w-full h-[100px] rounded-2xl">
+        <div class="carousel destination flex flex-col bg-purple-900 h-full w-[60%] rounded-2xl"></div>
+        <div class="destination flex flex-col bg-green-900 h-full w-[40%] rounded-2xl"></div>
+      </div>
+    </div>
     <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
     <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
     <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
@@ -112,7 +129,6 @@
     <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
     <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
   </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
