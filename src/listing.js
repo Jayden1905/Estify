@@ -7,11 +7,6 @@ const ulList = document.querySelector(".ul-list");
 const btnHeart = document.querySelector(".btn-heart");
 const heart = document.querySelector(".heart");
 
-btnHeart.addEventListener("click", () => {
-  //Not working and don't know why
-  heart.classList.toggle("heart-active");
-});
-
 $(document).ready(function () {
   $(window).click(function (e) {
     if (menuToggle.contains(e.target)) {
