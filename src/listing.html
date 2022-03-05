@@ -12,8 +12,8 @@
 </head>
 
 <body class="bg-TextPrimary">
-  <div class="listing-navigation h-20 bg-TextPrimary flex flex-col">
-    <div class="border-b-2 border-gray-200 z-50">
+  <div class="bg-TextPrimary flex flex-col">
+    <div class="h-20 listing-navigation border-b-2 border-gray-200 flex items-center z-50">
       <nav class="navigation container mx-auto flex py-4 justify-between items-center bg-TextPrimary z-50">
         <h1 class="font-bold text-3xl text-TextSecondary text-center font-serif tracking-widest cursor-pointer">
           Estify
@@ -42,11 +42,11 @@
         </div>
       </nav>
     </div>
-    <nav class="listing-nav-bar w-full h-24 flex items-center bg-TextPrimary z-10">
+    <nav class="listing-nav-bar w-full h-20 flex items-center bg-TextPrimary z-10">
       <div class="flex items-center container mx-auto">
         <ul class="ul-list flex gap-6 text-TextSecondary h-20 items-center transition-all duration-150 ease-linear">
           <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-2 border-black transition-all duration-200 ease-linear">
+            class="nav-list relative h-14 flex flex-col justify-center border-b-2 border-black transition-all duration-300 ease-linear">
             <a href="#" class="flex items-center gap-2">
               <i class="fa-solid fa-house"></i>
               Tiny homes
@@ -104,30 +104,279 @@
     </nav>
   </div>
   <div
-    class="product-listing container mx-auto mt-20 overflow-x-hidden grid justify-center sm:grid-cols-auto-fit grid-cols-auto-fit-3 gap-4 py-5">
+    class="product-listing mt-4 container relative mx-auto overflow-x-hidden grid justify-center sm:grid-cols-auto-fit grid-cols-auto-fit-3 gap-4">
     <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[350px] bg-blue-900 rounded-2xl relative">
-        <ul>
-          <li class="slide">
-            <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-              class="absolute object-cover w-full h-full rounded-2xl" />
-          </li>
-        </ul>
-      </div>
-      <div class="listing-description flex w-full h-[100px] rounded-2xl">
-        <div class="carousel destination flex flex-col bg-purple-900 h-full w-[60%] rounded-2xl"></div>
-        <div class="destination flex flex-col bg-green-900 h-full w-[40%] rounded-2xl"></div>
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button" class="btn-heart">
+          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
       </div>
     </div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
-    <div class="products bg-red-900 h-[450px] rounded-2xl flex items-center"></div>
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button">
+          <i class="fa-solid fa-heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button">
+          <i class="fa-solid fa-heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button">
+          <i class="fa-solid fa-heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button">
+          <i class="fa-solid fa-heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button">
+          <i class="fa-solid fa-heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button">
+          <i class="fa-solid fa-heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
+      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
+        <button type="button">
+          <i class="fa-solid fa-heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+        </button>
+        <button
+          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
+          data-carousel-button="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
+          data-carousel-button="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <a href="#">
+          <ul data-slides>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
+              data-active>
+              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
+              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
+                class="block object-cover object-center w-full h-full rounded-2xl" />
+            </li>
+          </ul>
+        </a>
+      </div>
+    </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"

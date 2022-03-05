@@ -6,3 +6,12 @@
   background-color: white;
   box-shadow: 5px 0 100px black;
 }
+
+.slide[data-active] {
+  opacity: 1;
+  transition-delay: 0;
+}
+
+.heart-active {
+  color: red;
+}
