@@ -12,91 +12,91 @@
 </head>
 
 <body>
-  <div class="w-screen h-screen bg-black flex justify-center">
-    <nav class="flex fixed p-4 w-full justify-around items-center lg:gap-0 gap-[40%] z-10">
-      <h1 class="font-bold text-3xl text-TextPrimary text-center font-serif tracking-widest cursor-pointer">
+  <div class="flex h-screen w-screen justify-center bg-black">
+    <nav class="fixed z-10 flex w-full items-center justify-around gap-[40%] p-4 lg:gap-0">
+      <h1 class="cursor-pointer text-center font-serif text-3xl font-bold tracking-widest text-TextPrimary">
         Estify
       </h1>
-      <ul class="flex gap-8 justify-center items-center flex-shrink lg:relative lg:ml-[135px] ml-0 absolute top-[140%]">
-        <li class="list-none text-TextPrimary text-2xs">
+      <ul class="absolute top-[140%] ml-0 flex flex-shrink items-center justify-center gap-8 lg:relative lg:ml-[135px]">
+        <li class="text-2xs list-none text-TextPrimary">
           <a href="#" data-tab-target="#placetostay"
-            class="nav-link relative after:absolute after:h-[2px] after:w-[30%] after:hover:w-[30%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
+            class="nav-link relative after:absolute after:bottom-[-0.8em] after:left-[50%] after:h-[2px] after:w-[30%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out after:hover:w-[30%]">
             Place to stay
           </a>
         </li>
-        <li class="list-none text-TextPrimary text-2xs">
+        <li class="text-2xs list-none text-TextPrimary">
           <a href="#" data-tab-target="#experiences"
-            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
+            class="nav-link relative after:absolute after:bottom-[-0.8em] after:left-[50%] after:h-[2px] after:w-[0] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out after:hover:w-[10%]">
             Experiences
           </a>
         </li>
-        <li class="list-none text-TextPrimary text-2xs">
+        <li class="text-2xs list-none text-TextPrimary">
           <a href="#"
-            class="nav-link relative after:absolute after:h-[2px] after:w-[0] after:hover:w-[10%] after:bottom-[-0.8em] after:left-[50%] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out">
+            class="nav-link relative after:absolute after:bottom-[-0.8em] after:left-[50%] after:h-[2px] after:w-[0] after:translate-x-[-50%] after:translate-y-[-50%] after:bg-TextPrimary after:transition-all after:duration-200 after:ease-in-out after:hover:w-[10%]">
             Online Experiences
           </a>
         </li>
       </ul>
-      <div class="flex justify-center items-center gap-1 relative">
-        <a href="#" class="text-TextPrimary text-[12px] p-2 hover:bg-gray-600 rounded-full">
+      <div class="relative flex items-center justify-center gap-1">
+        <a href="#" class="rounded-full p-2 text-[12px] text-TextPrimary hover:bg-gray-600">
           Become a Host
         </a>
         <i
-          class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-600 rounded-full text-TextPrimary mr-1 cursor-pointer"></i>
+          class="fa-solid fa-globe mr-1 cursor-pointer rounded-full p-3 text-[12px] text-TextPrimary hover:bg-gray-600"></i>
         <div id="menu-toggle"
-          class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
+          class="menu-toggle flex cursor-pointer items-center justify-center gap-5 rounded-3xl bg-TextPrimary py-1 px-4 shadow-lg">
           <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
           <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
         </div>
         <div id="menu-items"
-          class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full mt-4 w-[240px] scale-0 shadow-lg">
-          <a href="#" class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer">Sign up</a>
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Log in</a>
+          class="menu-items absolute top-full mt-4 flex w-[240px] scale-0 flex-col gap-1 rounded-lg bg-TextPrimary py-3 shadow-lg">
+          <a href="#" class="menu-link text-2xs w-full cursor-pointer py-2 px-6 hover:bg-gray-300">Sign up</a>
+          <a href="#" class="menu-link text-2xs w-full cursor-pointer p-2 px-6 hover:bg-gray-300">Log in</a>
           <hr />
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host your home</a>
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host an experience</a>
-          <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">help</a>
+          <a href="#" class="menu-link text-2xs w-full cursor-pointer p-2 px-6 hover:bg-gray-300">Host your home</a>
+          <a href="#" class="menu-link text-2xs w-full cursor-pointer p-2 px-6 hover:bg-gray-300">Host an experience</a>
+          <a href="#" class="menu-link text-2xs w-full cursor-pointer p-2 px-6 hover:bg-gray-300">help</a>
         </div>
       </div>
     </nav>
     <form action="" id="place"
-      class="w-max h-[68px] rounded-[80px] bg-TextPrimary relative lg:top-20 top-[140px] flex gap-[1px] flex-shrink form-tab">
+      class="form-tab relative top-[140px] flex h-[68px] w-max flex-shrink gap-[1px] rounded-[80px] bg-TextPrimary lg:top-20">
       <div
-        class="cursor-pointer location bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-3 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
-        <label for="" class="cursor-pointer location text-TextSecondary">Location</label>
+        class="location relative flex flex-shrink cursor-pointer flex-col justify-center gap-1 rounded-[80px] bg-TextPrimary pl-10 pr-3 text-xs after:absolute after:left-full after:bottom-[30px] after:h-[2px] after:w-8 after:translate-x-[-50%] after:rotate-[90deg] after:bg-gray-300 hover:bg-gray-300 lg:pr-20 lg:after:bottom-[33px]">
+        <label for="" class="location cursor-pointer text-TextSecondary">Location</label>
         <input type="text" placeholder="Where are you going?" id="input-location"
-          class="appearance-none border-white bg-transparent rounded text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+          class="focus:shadow-outline appearance-none rounded border-white bg-transparent leading-tight text-gray-700 focus:outline-none" />
       </div>
       <div
-        class="cursor-pointer bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-8 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
+        class="relative flex flex-shrink cursor-pointer flex-col justify-center gap-1 rounded-[80px] bg-TextPrimary pl-10 pr-8 text-xs after:absolute after:left-full after:bottom-[30px] after:h-[2px] after:w-8 after:translate-x-[-50%] after:rotate-[90deg] after:bg-gray-300 hover:bg-gray-300 lg:pr-20 lg:after:bottom-[33px]">
         <p class="text-TextSecondary">Check in</p>
         <span class="text-gray-400">Add dates</span>
       </div>
       <div
-        class="cursor-pointer bg-TextPrimary gap-1 text-xs pl-10 lg:pr-20 pr-8 rounded-[80px] flex flex-col flex-shrink justify-center hover:bg-gray-300 relative after:absolute after:w-8 after:h-[2px] after:bg-gray-300 after:rotate-[90deg] after:left-full after:translate-x-[-50%] lg:after:bottom-[33px] after:bottom-[30px]">
+        class="relative flex flex-shrink cursor-pointer flex-col justify-center gap-1 rounded-[80px] bg-TextPrimary pl-10 pr-8 text-xs after:absolute after:left-full after:bottom-[30px] after:h-[2px] after:w-8 after:translate-x-[-50%] after:rotate-[90deg] after:bg-gray-300 hover:bg-gray-300 lg:pr-20 lg:after:bottom-[33px]">
         <p class="text-TextSecondary">Check out</p>
         <span class="text-gray-400">Add dates</span>
       </div>
       <div
-        class="guest cursor-pointer bg-TextPrimary text-xs pl-10 rounded-[80px] flex flex-shrink justify-center items-center hover:bg-gray-300 relative lg:gap-16 gap-10">
-        <div class="flex flex-col flex-shrink gap-1">
+        class="guest relative flex flex-shrink cursor-pointer items-center justify-center gap-10 rounded-[80px] bg-TextPrimary pl-10 text-xs hover:bg-gray-300 lg:gap-16">
+        <div class="flex flex-shrink flex-col gap-1">
           <p class="text-TextSecondary">Guests</p>
           <span class="text-gray-400">Add guests</span>
         </div>
         <button type="submit"
-          class="search mr-4 flex justify-center flex-shrink gap-2 items-center bg-red-500 hover:bg-red-600 lg:p-4 p-3 rounded-full"
+          class="search mr-4 flex flex-shrink items-center justify-center gap-2 rounded-full bg-red-500 p-3 hover:bg-red-600 lg:p-4"
           id="btn-search">
           <i class="fa-solid fa-magnifying-glass text-xl text-TextPrimary"></i>
-          <Search class="hidden search-text text-TextPrimary text-xs" id="text-search">Search</Search>
+          <Search class="search-text hidden text-xs text-TextPrimary" id="text-search">Search</Search>
         </button>
       </div>
       <div id="listing"
-        class="absolute top-full bg-TextPrimary mt-4 rounded-[30px] p-6 w-[500px] h-[150px] flex flex-col justify-center gap-4 scale-0">
+        class="absolute top-full mt-4 flex h-[150px] w-[500px] scale-0 flex-col justify-center gap-4 rounded-[30px] bg-TextPrimary p-6">
         <p class="uppercase">Go Anywhere, anytime</p>
         <a href="../src/listing.html" id="listing-page"
-          class="shadow-2xl border-[1px] hover:shadow-2xl border-gray-200 rounded-full p-4 pl-6 flex justify-start items-center z-50">
+          class="z-50 flex items-center justify-start rounded-full border-[1px] border-gray-200 p-4 pl-6 shadow-2xl hover:shadow-2xl">
           I'm flexible
-          <i class="fa-solid fa-angle-right text-3xl ml-auto font-extralight"></i>
+          <i class="fa-solid fa-angle-right ml-auto text-3xl font-extralight"></i>
         </a>
       </div>
     </form>

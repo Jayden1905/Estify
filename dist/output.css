@@ -571,14 +571,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -765,10 +757,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.5rem;
 }
 
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-
 .gap-y-14 {
   row-gap: 3.5rem;
 }
@@ -836,9 +824,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-gray-300 {
+.border-gray-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -934,14 +922,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-20 {
   padding-bottom: 5rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1068,7 +1048,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .swiper-button-prev,
 .swiper-button-next {
   background-color: white;
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
   border-radius: 100%;
   color: #000 !important;
   fill: black !important;
@@ -1186,6 +1166,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:border-black:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .hover\:bg-gray-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
@@ -1267,10 +1252,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .lg\:gap-0 {
     gap: 0px;
   }
@@ -1290,5 +1271,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:after\:bottom-\[33px\]::after {
     content: var(--tw-content);
     bottom: 33px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }

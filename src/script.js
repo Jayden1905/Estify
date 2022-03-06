@@ -8,9 +8,9 @@ const inputLocation = document.getElementById("input-location");
 const guest = document.querySelector(".guest");
 const listing = document.getElementById("listing");
 
-$(document).ready(function () {
+$(document).ready(function() {
   function jj() {
-    $(window).click(function (e) {
+    $(window).click(function(e) {
       if (
         search.contains(e.target) ||
         yourLocation.contains(e.target) ||
@@ -20,7 +20,7 @@ $(document).ready(function () {
         $("#text-search").show("fast");
         e.preventDefault();
 
-        $(window).resize(function () {
+        $(window).resize(function() {
           if ($(window).width() < 1024) {
             $("search#text-search").removeAttr("id");
             $("search").hide("fast", "linear");
@@ -59,19 +59,19 @@ $(document).ready(function () {
     })
   );
 
-  $(".search").click(function () {
+  $(".search").click(function() {
     inputLocation.focus();
   });
 
-  $(".search").blur(function () {
+  $(".search").blur(function() {
     inputLocation.blur();
   });
 
-  $(".location").click(function () {
+  $(".location").click(function() {
     inputLocation.focus();
   });
 
-  $(".search").blur(function () {
+  $(".search").blur(function() {
     inputLocation.blur();
   });
 });
