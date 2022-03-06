@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="/dist/output.css" />
   <link rel="icon" href="../public-assets/favicon_io/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-TextPrimary">
@@ -42,7 +43,7 @@
         </div>
       </nav>
     </div>
-    <nav class="listing-nav-bar w-full h-20 flex items-center bg-TextPrimary z-10">
+    <nav class="listing-nav-bar overflow-x-hidden w-full h-20 flex items-center bg-TextPrimary z-10">
       <div class="flex items-center container mx-auto">
         <ul class="ul-list flex gap-6 text-TextSecondary h-20 items-center transition-all duration-150 ease-linear">
           <li
@@ -104,364 +105,140 @@
     </nav>
   </div>
   <div
-    class="product-listing mt-4 container relative mx-auto overflow-x-hidden grid justify-center sm:grid-cols-auto-fit grid-cols-auto-fit-3 gap-4">
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+    class="product-listing mt-4 container h-full pb-4 relative mx-auto overflow-x-hidden grid justify-center items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 px-4">
+    <div class="products h-full rounded-2xl flex flex-col items-center">
+      <div class="swiper w-full h-[370px] rounded-2xl group">
+        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
         </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
+        <a href="#" class="swiper-wrapper">
+          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+            class="swiper-slide object-cover w-full h-full" />
+          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
+            class="swiper-slide object-cover object-center w-full h-full" />
+          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
+            class="swiper-slide object-cover object-center w-full h-full" />
         </a>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="swiper-button-next scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
       </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
+      <div class="flex w-full h-[80px] flex-wrap">
+        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
           <p>Jibhi HimachalPradesh</p>
           <p class="opacity-50">2,514 kilometers awy</p>
         </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
+        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
           <p>$90 / night</p>
           <p class="opacity-50">Apr 1-8</p>
         </div>
       </div>
     </div>
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button type="button" class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+    <div class="products h-full rounded-2xl flex flex-col items-center">
+      <div class="swiper w-full h-[370px] rounded-2xl group">
+        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
         </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
+        <a href="#" class="swiper-wrapper">
+          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+            class="swiper-slide object-cover w-full h-full" />
+          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
+            class="swiper-slide object-cover object-center w-full h-full" />
+          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
+            class="swiper-slide object-cover object-center w-full h-full" />
         </a>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="swiper-button-next scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
       </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
+      <div class="flex w-full h-[80px] flex-wrap">
+        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
           <p>Jibhi HimachalPradesh</p>
           <p class="opacity-50">2,514 kilometers awy</p>
         </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
+        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
           <p>$90 / night</p>
           <p class="opacity-50">Apr 1-8</p>
         </div>
       </div>
     </div>
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button type="button" class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+    <div class="products h-full rounded-2xl flex flex-col items-center">
+      <div class="swiper w-full h-[370px] rounded-2xl group">
+        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
         </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
+        <a href="#" class="swiper-wrapper">
+          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+            class="swiper-slide object-cover w-full h-full" />
+          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
+            class="swiper-slide object-cover object-center w-full h-full" />
+          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
+            class="swiper-slide object-cover object-center w-full h-full" />
         </a>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="swiper-button-next scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
       </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
+      <div class="flex w-full h-[80px] flex-wrap">
+        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
           <p>Jibhi HimachalPradesh</p>
           <p class="opacity-50">2,514 kilometers awy</p>
         </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
+        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
           <p>$90 / night</p>
           <p class="opacity-50">Apr 1-8</p>
         </div>
       </div>
     </div>
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button type="button" class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
+    <div class="products h-full rounded-2xl flex flex-col items-center">
+      <div class="swiper w-full h-[370px] rounded-2xl group">
+        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
         </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
+        <a href="#" class="swiper-wrapper">
+          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
+            class="swiper-slide object-cover w-full h-full" />
+          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
+            class="swiper-slide object-cover object-center w-full h-full" />
+          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
+            class="swiper-slide object-cover object-center w-full h-full" />
         </a>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="swiper-button-next scale-0 group-hover:scale-100">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
       </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
+      <div class="flex w-full h-[80px] flex-wrap">
+        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
           <p>Jibhi HimachalPradesh</p>
           <p class="opacity-50">2,514 kilometers awy</p>
         </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
+        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
           <p>$90 / night</p>
           <p class="opacity-50">Apr 1-8</p>
         </div>
       </div>
     </div>
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button type="button" class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
-        </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
-        </a>
-      </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
-      </div>
-    </div>
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button type="button" class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
-        </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
-        </a>
-      </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
-      </div>
-    </div>
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button type="button" class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
-        </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
-        </a>
-      </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
-      </div>
-    </div>
-    <div class="products h-[450px] rounded-2xl flex flex-col items-center">
-      <div class="carousel image-container w-full h-[370px] rounded-2xl relative group cursor-pointer" data-carousel>
-        <button type="button" class="btn-heart">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary z-50 absolute left-[90%]"></i>
-        </button>
-        <button
-          class="carousel-button prev left-4 absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-100"
-          data-carousel-button="prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button
-          class="carousel-button next right-4 ml-auto absolute z-50 bg-none border-none text-xs top-1/2 -translate-y-1/2 text-TextSecondary cursor-pointer rounded-full w-8 h-8 bg-gray-100 scale-0 group-hover:scale-110"
-          data-carousel-button="next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        <a href="#">
-          <ul data-slides>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out"
-              data-active>
-              <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/Estify.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-            <li class="slide absolute inset-0 opacity-0 transition-opacity duration-200 delay-200 ease-in-out">
-              <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-1"
-                class="block object-cover object-center w-full h-full rounded-2xl" />
-            </li>
-          </ul>
-        </a>
-      </div>
-      <div class="flex w-full h-[80px]">
-        <div class="destination flex flex-col justify-center w-[60%]">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
-      </div>
-    </div>
-
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="listing.js"></script>
 </body>
 
