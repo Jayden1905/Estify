@@ -2,10 +2,10 @@ const navigation = document.querySelector(".navgation");
 const menuToggle = document.getElementById("menu-toggle");
 const menuItems = document.getElementById("menu-items");
 const menuLinks = document.querySelectorAll(".menu-link");
-const navBarList = document.querySelector(".listing-nav-bar");
-const ulList = document.querySelector(".ul-list");
-const btnHeart = document.querySelector(".btn-heart");
-const heart = document.querySelector(".heart");
+// const navBarList = document.querySelector(".listing-nav-bar");
+// const ulList = document.querySelector(".ul-list");
+// const btnHeart = document.querySelector(".btn-heart");
+// const heart = document.querySelector(".heart");
 
 $(document).ready(function () {
   $(window).click(function (e) {
