@@ -3,307 +3,312 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Estify</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="/dist/output.css" />
-  <link rel="icon" href="../public-assets/favicon_io/favicon.ico" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="../public-assets/favicon_io/favicon.ico" rel="icon" />
+  <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="stylesheet" />
 </head>
 
 <body class="bg-TextPrimary">
-  <div class="bg-TextPrimary flex flex-col">
-    <div class="h-20 listing-navigation border-b-2 border-gray-200 flex items-center z-50">
-      <nav class="navigation container mx-auto flex py-4 justify-between items-center bg-TextPrimary z-50">
-        <h1 class="font-bold text-3xl text-TextSecondary text-center font-serif tracking-widest cursor-pointer">
-          Estify
-        </h1>
-        <div class="flex items-center gap-1 relative justify-center">
-          <a href="#" class="text-TextSecondary text-[12px] p-2 hover:bg-gray-200 rounded-full">
-            Become a Host
-          </a>
-          <i
-            class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-200 rounded-full text-TextSecondary mr-1 cursor-pointer"></i>
-          <div id="menu-toggle"
-            class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg">
-            <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
-            <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
-          </div>
-          <div id="menu-items"
-            class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full mt-4 w-[240px] scale-0 shadow-lg">
-            <a href="#" class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer">Sign up</a>
-            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Log in</a>
-            <hr />
-            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host your home</a>
-            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">Host an
-              experience</a>
-            <a href="#" class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer">help</a>
-          </div>
+<div class="bg-TextPrimary flex flex-col">
+  <div class="h-20 listing-navigation border-b-2 border-gray-200 flex items-center z-50">
+    <nav class="navigation container mx-auto flex py-4 justify-between items-center bg-TextPrimary z-50">
+      <h1 class="font-bold text-3xl text-TextSecondary text-center font-serif tracking-widest cursor-pointer">
+        Estify
+      </h1>
+      <div class="flex items-center gap-1 relative justify-center">
+        <a class="text-TextSecondary text-[12px] p-2 hover:bg-gray-200 rounded-full" href="#">
+          Become a Host
+        </a>
+        <i
+          class="fa-solid fa-globe text-[12px] p-3 hover:bg-gray-200 rounded-full text-TextSecondary mr-1 cursor-pointer"></i>
+        <div
+          class="menu-toggle flex items-center justify-center bg-TextPrimary gap-5 py-1 px-4 rounded-3xl cursor-pointer shadow-lg"
+          id="menu-toggle">
+          <i class="fa-solid fa-bars text-2xs text-TextSecondary"></i>
+          <i class="fa-solid fa-circle-user text-3xl text-TextSecondary"></i>
         </div>
-      </nav>
-    </div>
-    <nav class="listing-nav-bar overflow-x-hidden w-full h-20 flex items-center bg-TextPrimary z-10">
-      <div class="flex items-center container mx-auto">
-        <ul class="ul-list flex gap-6 text-TextSecondary h-20 items-center transition-all duration-150 ease-linear">
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-2 border-black transition-all duration-300 ease-linear">
-            <a href="#" class="flex items-center gap-2">
-              <i class="fa-solid fa-house"></i>
-              Tiny homes
-            </a>
-          </li>
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-            <a href="#">Amazing pools</a>
-          </li>
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-            <a href="#">Beachfront</a>
-          </li>
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-            <a href="#">Offbeat</a>
-          </li>
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-            <a href="#">Cabins</a>
-          </li>
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-            <a href="#">Ryokans</a>
-          </li>
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-            <a href="#">Islands</a>
-          </li>
-          <li
-            class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
-            <button type="submit" class="flex items-center gap-2">
-              More <i class="fa-solid fa-angle-down text-xs"></i>
-            </button>
-          </li>
-        </ul>
-        <div class="flex ml-auto gap-2">
-          <button type="submit"
-            class="flex border-[2px] border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
-            <p>Anytime</p>
-            <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <button type="submit"
-            class="flex border-[2px] border-gray-400 hover:border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
-            <p>Gusts</p>
-            <i class="fa-solid fa-angle-down"></i>
-          </button>
-          <button type="submit"
-            class="flex border-[2px] border-gray-400 hover:border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]">
-            <i class="fa-solid fa-sliders"></i>
-            <p>Filter</p>
-          </button>
+        <div
+          class="menu-items bg-TextPrimary flex flex-col gap-1 py-3 rounded-lg absolute top-full mt-4 w-[240px] scale-0 shadow-lg"
+          id="menu-items">
+          <a class="menu-link w-full hover:bg-gray-300 py-2 px-6 text-2xs cursor-pointer" href="#">Sign up</a>
+          <a class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer" href="#">Log in</a>
+          <hr />
+          <a class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer" href="#">Host your home</a>
+          <a class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer" href="#">Host an
+            experience</a>
+          <a class="menu-link w-full hover:bg-gray-300 p-2 px-6 text-2xs cursor-pointer" href="#">help</a>
         </div>
       </div>
     </nav>
   </div>
-  <div
-    class="product-listing mt-4 container pb-20 relative mx-auto overflow-x-hidden grid justify-center items-center xl:grid-cols-5 lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 gap-y-14 sm:px-0 px-6">
-    <div class="products rounded-2xl flex flex-col items-center aspect-square">
-      <div class="swiper aspect-square rounded-2xl group">
-        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
+  <nav class="listing-nav-bar overflow-x-hidden w-full h-20 flex items-center bg-TextPrimary z-10">
+    <div class="flex items-center container mx-auto">
+      <ul class="ul-list flex gap-6 text-TextSecondary h-20 items-center transition-all duration-150 ease-linear">
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-2 border-black transition-all duration-300 ease-linear">
+          <a class="flex items-center gap-2" href="#">
+            <i class="fa-solid fa-house"></i>
+            Tiny homes
+          </a>
+        </li>
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+          <a href="#">Amazing pools</a>
+        </li>
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+          <a href="#">Beachfront</a>
+        </li>
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+          <a href="#">Offbeat</a>
+        </li>
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+          <a href="#">Cabins</a>
+        </li>
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+          <a href="#">Ryokans</a>
+        </li>
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+          <a href="#">Islands</a>
+        </li>
+        <li
+          class="nav-list relative h-14 flex flex-col justify-center border-b-0 border-black transition-all duration-200 ease-linear">
+          <button class="flex items-center gap-2" type="submit">
+            More <i class="fa-solid fa-angle-down text-xs"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="flex ml-auto gap-2">
+        <button class="flex border-[2px] border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]"
+                type="submit">
+          <p>Anytime</p>
+          <i class="fa-solid fa-angle-down"></i>
         </button>
-        <a href="#" class="swiper-wrapper !aspect-square">
-          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-            class="swiper-slide object-cover object-center w-full h-full first-image" />
-          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
-            class="swiper-slide object-cover object-center w-full h-full" />
-        </a>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
-        <div class="swiper-button-next scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
-      </div>
-      <div class="flex w-full h-[20%] flex-wrap">
-        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
+        <button
+          class="flex border-[2px] border-gray-400 hover:border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]"
+          type="submit">
+          <p>Gusts</p>
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <button
+          class="flex border-[2px] border-gray-400 hover:border-black items-center justify-center gap-2 rounded-full w-[120px] h-[40px]"
+          type="submit">
+          <i class="fa-solid fa-sliders"></i>
+          <p>Filter</p>
+        </button>
       </div>
     </div>
-    <div class="products rounded-2xl flex flex-col items-center aspect-square">
-      <div class="swiper aspect-square rounded-2xl group">
-        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
-        </button>
-        <a href="#" class="swiper-wrapper !aspect-square">
-          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
-            class="swiper-slide object-cover object-center w-full h-full" />
-        </a>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
-        <div class="swiper-button-next scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
+  </nav>
+</div>
+<div
+  class="product-listing mt-4 container pb-20 relative mx-auto overflow-x-hidden grid justify-center items-center xl:grid-cols-5 lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 gap-y-14 sm:px-0 px-6">
+  <div class="products rounded-2xl flex flex-col items-center aspect-square">
+    <div class="swiper aspect-square rounded-2xl group">
+      <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+        <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
+      </button>
+      <a class="swiper-wrapper !aspect-square" href="#">
+        <img alt="image-1" class="swiper-slide object-cover object-center w-full h-full first-image"
+             src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" />
+        <img alt="image-2" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-pixabay-534174.jpeg" />
+        <img alt="images-3" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/Estify.jpeg" />
+      </a>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-left"></i>
       </div>
-      <div class="flex w-full h-[20%] flex-wrap">
-        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
+      <div class="swiper-button-next scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-right"></i>
       </div>
     </div>
-    <div class="products rounded-2xl flex flex-col items-center aspect-square">
-      <div class="swiper aspect-square rounded-2xl group">
-        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
-        </button>
-        <a href="#" class="swiper-wrapper !aspect-square">
-          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
-            class="swiper-slide object-cover object-center w-full h-full" />
-        </a>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
-        <div class="swiper-button-next scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
+    <div class="flex w-full h-[20%] flex-wrap">
+      <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
+        <p>Jibhi HimachalPradesh</p>
+        <p class="opacity-50">2,514 kilometers awy</p>
       </div>
-      <div class="flex w-full h-[20%] flex-wrap">
-        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
-      </div>
-    </div>
-    <div class="products rounded-2xl flex flex-col items-center aspect-square">
-      <div class="swiper aspect-square rounded-2xl group">
-        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
-        </button>
-        <a href="#" class="swiper-wrapper !aspect-square">
-          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
-            class="swiper-slide object-cover object-center w-full h-full" />
-        </a>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
-        <div class="swiper-button-next scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
-      </div>
-      <div class="flex w-full h-[20%] flex-wrap">
-        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
-      </div>
-    </div>
-    <div class="products rounded-2xl flex flex-col items-center aspect-square">
-      <div class="swiper aspect-square rounded-2xl group">
-        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
-        </button>
-        <a href="#" class="swiper-wrapper !aspect-square">
-          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
-            class="swiper-slide object-cover object-center w-full h-full" />
-        </a>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
-        <div class="swiper-button-next scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
-      </div>
-      <div class="flex w-full h-[20%] flex-wrap">
-        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
-      </div>
-    </div>
-    <div class="products rounded-2xl flex flex-col items-center aspect-square">
-      <div class="swiper aspect-square rounded-2xl group">
-        <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
-          <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
-        </button>
-        <a href="#" class="swiper-wrapper !aspect-square">
-          <img src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" alt="image-1"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/pexels-pixabay-534174.jpeg" alt="image-2"
-            class="swiper-slide object-cover object-center w-full h-full" />
-          <img src="../public-assets/images/Estify.jpeg" alt="images-3"
-            class="swiper-slide object-cover object-center w-full h-full" />
-        </a>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
-        <div class="swiper-button-next scale-0 group-hover:scale-100">
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
-      </div>
-      <div class="flex w-full h-[20%] flex-wrap">
-        <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
-          <p>Jibhi HimachalPradesh</p>
-          <p class="opacity-50">2,514 kilometers awy</p>
-        </div>
-        <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
-          <p>$90 / night</p>
-          <p class="opacity-50">Apr 1-8</p>
-        </div>
+      <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
+        <p>$90 / night</p>
+        <p class="opacity-50">Apr 1-8</p>
       </div>
     </div>
   </div>
-  <script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="listing.js"></script>
+  <div class="products rounded-2xl flex flex-col items-center aspect-square">
+    <div class="swiper aspect-square rounded-2xl group">
+      <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+        <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
+      </button>
+      <a class="swiper-wrapper !aspect-square" href="#">
+        <img alt="image-1" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" />
+        <img alt="image-2" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-pixabay-534174.jpeg" />
+        <img alt="images-3" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/Estify.jpeg" />
+      </a>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="swiper-button-next scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="flex w-full h-[20%] flex-wrap">
+      <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
+        <p>Jibhi HimachalPradesh</p>
+        <p class="opacity-50">2,514 kilometers awy</p>
+      </div>
+      <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
+        <p>$90 / night</p>
+        <p class="opacity-50">Apr 1-8</p>
+      </div>
+    </div>
+  </div>
+  <div class="products rounded-2xl flex flex-col items-center aspect-square">
+    <div class="swiper aspect-square rounded-2xl group">
+      <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+        <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
+      </button>
+      <a class="swiper-wrapper !aspect-square" href="#">
+        <img alt="image-1" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" />
+        <img alt="image-2" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-pixabay-534174.jpeg" />
+        <img alt="images-3" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/Estify.jpeg" />
+      </a>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="swiper-button-next scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="flex w-full h-[20%] flex-wrap">
+      <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
+        <p>Jibhi HimachalPradesh</p>
+        <p class="opacity-50">2,514 kilometers awy</p>
+      </div>
+      <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
+        <p>$90 / night</p>
+        <p class="opacity-50">Apr 1-8</p>
+      </div>
+    </div>
+  </div>
+  <div class="products rounded-2xl flex flex-col items-center aspect-square">
+    <div class="swiper aspect-square rounded-2xl group">
+      <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+        <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
+      </button>
+      <a class="swiper-wrapper !aspect-square" href="#">
+        <img alt="image-1" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" />
+        <img alt="image-2" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-pixabay-534174.jpeg" />
+        <img alt="images-3" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/Estify.jpeg" />
+      </a>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="swiper-button-next scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="flex w-full h-[20%] flex-wrap">
+      <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
+        <p>Jibhi HimachalPradesh</p>
+        <p class="opacity-50">2,514 kilometers awy</p>
+      </div>
+      <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
+        <p>$90 / night</p>
+        <p class="opacity-50">Apr 1-8</p>
+      </div>
+    </div>
+  </div>
+  <div class="products rounded-2xl flex flex-col items-center aspect-square">
+    <div class="swiper aspect-square rounded-2xl group">
+      <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+        <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
+      </button>
+      <a class="swiper-wrapper !aspect-square" href="#">
+        <img alt="image-1" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" />
+        <img alt="image-2" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-pixabay-534174.jpeg" />
+        <img alt="images-3" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/Estify.jpeg" />
+      </a>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="swiper-button-next scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="flex w-full h-[20%] flex-wrap">
+      <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
+        <p>Jibhi HimachalPradesh</p>
+        <p class="opacity-50">2,514 kilometers awy</p>
+      </div>
+      <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
+        <p>$90 / night</p>
+        <p class="opacity-50">Apr 1-8</p>
+      </div>
+    </div>
+  </div>
+  <div class="products rounded-2xl flex flex-col items-center aspect-square">
+    <div class="swiper aspect-square rounded-2xl group">
+      <button class="btn-heart z-50 absolute top-5 right-0 mr-4">
+        <i class="fa-solid fa-heart heart text-2xl text-TextPrimary"></i>
+      </button>
+      <a class="swiper-wrapper !aspect-square" href="#">
+        <img alt="image-1" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-misael-garcia-1707823.jpeg" />
+        <img alt="image-2" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/pexels-pixabay-534174.jpeg" />
+        <img alt="images-3" class="swiper-slide object-cover object-center w-full h-full"
+             src="../public-assets/images/Estify.jpeg" />
+      </a>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="swiper-button-next scale-0 group-hover:scale-100">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="flex w-full h-[20%] flex-wrap">
+      <div class="destination flex flex-col justify-center w-[60%] flex-wrap">
+        <p>Jibhi HimachalPradesh</p>
+        <p class="opacity-50">2,514 kilometers awy</p>
+      </div>
+      <div class="destination flex flex-col justify-center w-[40%] items-end flex-wrap">
+        <p>$90 / night</p>
+        <p class="opacity-50">Apr 1-8</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="listing.js"></script>
 </body>
 
 </html>
